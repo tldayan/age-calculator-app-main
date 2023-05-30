@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="input_feilds_container">
+                <div class="input_container">
+                    <label class="day_feild_title" for="Day">DAY</label>
+                    <input class="day_feild" placeholder="DD" required>
+                </div>
+                <div class="input_container">
+                    <label class="month_feild_title" for="month">MONTH</label>
+                    <input class="month_feild" placeholder="MM" required>
+                </div>
+                <div class="input_container">
+                    <label class="year_feild_title" for="year">YEAR</label>
+                    <input class="year_feild" type="text" placeholder="YYYY" required>
+                </div>
+            </div>
+            <div class="line"><button onclick="calculateAge()" class="submit_button" type="submit"><img src="/age-calculator-app-main/assets/images/icon-arrow.svg" alt=""></button></div>
+        </form>
+        <div class="results_container">
+            <p><span class="dashes result_years">--</span> years</p>
+            <p><span class="dashes result_months">--</span> months</p>
+            <p><span class="dashes result_days">--</span> days</p>
+        </div>
+    </div>
+
+    <div class="attribution" >Challenge by <a class="frontendmentor" href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q">Frontend Mentor</a>. Coded by <a class="author" href="https://github.com/tldayan">TL Dayan</a></div>
+
+    <script src="age.js"></script>
+</body>
+</html>

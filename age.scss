@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+    /* border: 2px solid black; */
+    height: 500px;
+    width: min(90%, 600px);
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px 20px 150px 20px;
+}
+
+.input_feilds_container {
+/*     border: 2px solid black; */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px;
+    
+}
+
+.input_container {
+    /* border: 2px solid red; */
+    width: 110px;
+    
+}
+
+.day_feild_title, .month_feild_title,.year_feild_title {
+    font-size: clamp(0.4rem, 5vw, 1rem);
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.439);
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.day_feild,.month_feild,.year_feild {
+    width: 100%;
+    height: 45px;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-indent: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.238);
+}
+
+.day_feild::placeholder,.month_feild::placeholder,.year_feild::placeholder {
+    text-indent: 10px;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black;
+    position: relative;
+}
+
+.results_container {
+    /* border: 2px solid black; */
+    font-size: clamp(2.2rem, 10vw, 5rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    line-height: 90px;
+    color: hsl(0, 0%, 8%);
+    padding: 30px;
+    
+}
+
+.dashes {
+    color: hsl(259, 100%, 65%);
+    
+}
+
+.submit_button {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.attribution > a {
+    text-decoration: none;
+}
+
+.frontendmentor {
+    color: purple;
+}
+
+.author {
+    color: purple;
+}
